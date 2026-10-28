@@ -6,13 +6,13 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 12:37:24 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/10/27 12:56:54 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/10/28 13:01:49 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	is_match(char c, char const *set)
+int	is_match(char c, char const *set)
 {
 	int	i;
 
@@ -26,7 +26,7 @@ static int	is_match(char c, char const *set)
 	return (0);
 }
 
-char *ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	start;
 	size_t	end;

@@ -6,13 +6,13 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 09:51:39 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/10/23 09:52:56 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/10/28 13:03:27 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 		c = c + 32;

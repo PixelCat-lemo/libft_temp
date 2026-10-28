@@ -6,13 +6,13 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 11:28:51 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/10/27 11:36:10 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/10/28 12:39:40 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_memcmp(const void *s1, const void *s2, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	const unsigned char	*str1;
 	const unsigned char	*str2;

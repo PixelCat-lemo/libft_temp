@@ -6,23 +6,23 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 16:25:02 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/10/22 16:34:53 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/10/28 12:36:44 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-    int i;
-    char *str;
+	int		i;
+	char	*str;
 
-    str = (char *)s;
-    i = 0;
-    while (i <= n)
-    {
-        str[i] = '\0';
-        i++;
-    }
-    return(s);
+	str = (char *)s;
+	i = 0;
+	while (i <= n)
+	{
+		str[i] = '\0';
+		i++;
+	}
+	return (s);
 }

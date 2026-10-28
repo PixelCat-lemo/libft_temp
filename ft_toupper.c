@@ -6,13 +6,13 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 17:12:04 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/10/23 09:50:16 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/10/28 13:04:18 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_toupper(int c)
+int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
 		c = c - 32;

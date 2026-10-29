@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 11:53:55 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/10/28 13:02:56 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/10/29 14:39:44 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	unsigned char	*subs;
+	char			*subs;
 	size_t			i;
 	size_t			s_len;
 
@@ -31,7 +31,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	i = 0;
 	while (i < len)
 	{
-		subs[i] = s[i];
+		subs[i] = s[start + i];
 		i++;
 	}
 	subs[i] = '\0';

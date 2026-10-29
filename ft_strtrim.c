@@ -6,25 +6,11 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 12:37:24 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/10/28 13:01:49 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/10/29 13:59:26 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-int	is_match(char c, char const *set)
-{
-	int	i;
-
-	i = 0;
-	while (set[i])
-	{
-		if (set[i] == c)
-			return (1);
-		i++;
-	}
-	return (0);
-}
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
@@ -37,11 +23,9 @@ char	*ft_strtrim(char const *s1, char const *set)
 		return (ft_strdup(s1));
 	start = 0;
 	end = ft_strlen(s1);
-	while (is_match(s1[start], set))
+	while (start < end && ft_strchr(set, s1[start]))
 		start++;
-	if (start == end)
-		return (ft_strdup(""));
-	while (is_match(s1[end - 1], set))
+	while (end > start && ft_strchr(set, s1[end - 1]))
 		end--;
 	return (ft_substr(s1, start, end - start));
 }

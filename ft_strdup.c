@@ -6,13 +6,13 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 10:54:53 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/10/28 12:44:10 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/10/29 13:48:28 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(char *src)
+char	*ft_strdup(const char *src)
 {
 	char	*dest;
 	int		i;

@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 10:06:15 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/10/28 13:00:32 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/10/29 14:30:49 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strrchr(const char *s, int c)
 	int	i;
 	int	most_recent;
 
-	most_recent = 0;
+	most_recent = -1;
 	i = 0;
 	while (s[i])
 	{

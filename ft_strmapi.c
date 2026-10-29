@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 11:18:54 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/10/28 13:06:21 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/10/29 13:50:05 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char	*dest;
 	size_t	len;
-	int		i;
+	size_t	i;
 
 	if (!s || !f)
 		return (NULL);

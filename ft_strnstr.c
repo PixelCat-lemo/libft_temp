@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 10:14:44 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/10/28 12:59:26 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/10/29 13:50:23 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	int	s1;
-	int	s2;
+	size_t	s1;
+	size_t	s2;
 
 	s1 = 0;
 	if (little[0] == '\0')

@@ -6,11 +6,14 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 16:58:03 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/10/28 13:04:49 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/10/30 14:17:54 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+#include <stdio.h>
+#include <stddef.h>
 
 int	ft_strncmp(char *s1, char *s2, size_t n)
 {

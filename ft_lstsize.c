@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 17:10:08 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/10/28 17:33:50 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/10/30 11:50:17 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,14 @@
 unsigned int	ft_lstsize(t_list *lst)
 {
 	unsigned int	count;
+	t_list			*temp;
 
 	count = 0;
-	while (lst != NULL)
+	temp = lst;
+	while (temp)
 	{
 		count++;
-		lst = lst->next;
+		temp = temp->next;
 	}
 	return (count);
 }

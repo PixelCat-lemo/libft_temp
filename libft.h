@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 13:51:09 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/10/29 15:55:01 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/10/30 12:22:04 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,10 @@ unsigned int	ft_lstsize(t_list *lst);
 t_list			*ft_lstlast(t_list *lst);
 void			ft_lstadd_back(t_list **lst, t_list *new);
 void			ft_lstdelone(t_list *lst, void (*del)(void*));
-void			ft_lstclear(t_list **lst, void (*del)(void*)); //
-void			ft_lstiter(t_list *lst, void (*f)(void *)); // 
+void			ft_lstclear(t_list **lst, void (*del)(void*));
+void			ft_lstiter(t_list *lst, void (*f)(void *));
 t_list			*ft_lstmap(t_list *lst, void *(*f)(void *),
-					void (*del)(void *)); //
+					void (*del)(void *));
 
 /*---<CHARS>---*/
 int				ft_isalpha(int c);

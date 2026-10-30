@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 17:12:51 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/10/28 17:22:21 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/10/30 12:32:25 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,11 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 
 	if (!lst || !new)
 		return ;
-	if (*lst == NULL)
+	if (!*lst)
 	{
 		*lst = new;
 		return ;
 	}
-	current = *lst;
-	while (current->next != NULL)
-		current = current->next;
+	current = ft_lstlast(*lst);
 	current->next = new;
-	return ;
 }

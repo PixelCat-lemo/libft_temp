@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 10:14:44 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/10/29 13:50:23 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/10/30 12:52:41 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,5 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 			return ((char *)&big[s1]);
 		s1++;
 	}
-	return (NULL);
+	return (0);
 }

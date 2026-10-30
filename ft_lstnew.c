@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 16:54:24 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/10/28 16:54:52 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/10/30 11:49:17 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ t_list	*ft_lstnew(void *content)
 {
 	t_list	*node;
 
-	node = malloc(sizeof(t_list));
-	if (node == NULL)
+	node = (t_list *)malloc(sizeof(t_list));
+	if (!node)
 		return (NULL);
 	node->content = content;
 	node->next = NULL;

@@ -1,17 +1,31 @@
 This project has been created as part of the 42 curriculum by pde-lemo.
-
-<h1>Libft</h1>
-<h2>Description</h2>
-
-**Libft** is the first project from the 42 Common Core curriculum. Its goal is to recreate a collection of standard C library functions, as well as implement additional utility functions, by building a personal C library.
-The project provides a deeper understanding of how common C functions work internally, while developing essential programming skills such as memory management, string manipulation, pointers, and linked lists.
-The result is a reusable library called libft.a, which can be integrated into future C projects.
-
 <br>
 
-<h2>Features</h2>
+<h1>Libft</h1>
 
-1. <h3>Libc Functions</h3>
+
+<ul>
+	<li><a href="#Description">Description</a></li>
+	<li><a href="#Features">Features</a></li>
+	<ul>
+		<a href="#Libc_Functions">Libc Functions</a><br></li>
+		<a href="#Additional">Additional Functions</a><br></li>
+		<a href="#Linked">Linked List</a><br></li>
+	</ul>
+	<li><a href="#Instructions">Instructions</a></li>
+	<li><a href="#Resources">Resources</a></li>
+</ul>
+
+
+<h2 id="Description">Description</h2>
+
+**Libft** is the first project from the 42 Common Core curriculum. Its goal is to recreate a collection of standard C library functions, as well as implement additional utility functions, by building a personal C library.
+The project provides a deeper understanding of how common C functions work internally, while developing essential programming skills such as memory management, string manipulation,pointers, and linked lists.
+The result is a reusable library called libft.a, which can be integrated into future C projects.
+
+<h2 id="Features">Features</h2>
+
+1. <h3 id="Libc_Functions">Libc Functions</h3>
 
 The library functions includes:
 
@@ -65,10 +79,9 @@ The library functions includes:
 | ft_atoi   | Converts a string representing an integer into an integer value. |
 | ft_calloc | Allocates memory for an array and initializes it to zero.        |
 
-<br>
-<br>
 
-1. <h3>Additional Functions</h3>
+
+2. <h3 id="Additional">Additional Functions</h3>
 
 Utility functions created to simplify string manipulation, data conversion, and output operations.
 
@@ -102,15 +115,15 @@ Utility functions created to simplify string manipulation, data conversion, and 
 | ft_putendl_fd | Writes a string followed by a newline to a specified file descriptor. |
 | ft_putnbr_fd  | Writes an integer to a specified file descriptor.                     |
 
-<br>
-<br>
 
-3. <h3>Linked List</h3>
+
+3. <h3 id="Linked">Linked List</h3>
 
 Functions for creating, manipulating, and managing singly linked lists.
-**Linked List Structure**
-c
 
+**Linked List Structure**
+
+c
 <pre><code>typedef struct s_list
 {
     void            *content;
@@ -118,8 +131,6 @@ c
 }   t_list;</code></pre>
 
 Each node contains a pointer to its content and a pointer to the next node.
-
-<br>
 
 **Linked List Operations**
 
@@ -135,14 +146,13 @@ Each node contains a pointer to its content and a pointer to the next node.
 | ft_lstiter      | Applies a function to the content of every node.                            |
 | ft_lstmap       | Creates a new linked list by applying a function to each node's content.    |
 
-<br>
 
-<h2>Instructions</h2>
+<h2 id="Instructions">Instructions</h2>
 
 Clone the repository:
 
 bash
-<pre><code>git clone <repository-url></code></pre>
+<pre><code>git clone "repository-url"</code></pre>
 cd libft
 
 
@@ -170,21 +180,13 @@ To use Libft in another C project, include the header file:
 c
 <pre><code>#include "libft.h"</code></pre>
 
-
-Compile your source files together with the library:
-
-bash
-<pre><code>cc main.c -L. -lft -I. -o program</code></pre>
-
-
 Run the executable:
 
 bash
-<pre><code>./program</code></pre>
+<pre><code>./libft</code></pre>
 
-<br>
 
-<h2>Resources</h2>
+<h2 id="Resources">Resources</h2>
 
 The following resources were useful for understanding the functions and concepts implemented in this project:
 
@@ -208,7 +210,4 @@ Reviewing documentation structure and improving the clarity of explanations.
 
 AI-generated suggestions were treated as learning references. The implementation, testing, and final validation of the functions were carried out by me.
 
-<br>
 
-<h2>Author</h2>
-    42 Login: pde-lemo

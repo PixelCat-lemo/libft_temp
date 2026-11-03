@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 12:33:18 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/10/29 13:48:57 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/11/03 14:20:37 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,9 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		i++;
 	}
 }
+/*
+Applies the function ’f’ to each character of the
+string passed as argument, passing its index as
+the first argument. Each character is passed by
+address to ’f’ so it can be modified if necessary.
+*/

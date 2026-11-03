@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 11:53:55 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/10/29 14:39:44 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/11/03 14:36:39 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,3 +37,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	subs[i] = '\0';
 	return (subs);
 }
+/*
+Allocates memory (using malloc(3)) and returns a
+substring from the string ’s’.
+The substring starts at index ’start’ and has a
+maximum length of ’len’.
+*/

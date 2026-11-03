@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 15:53:39 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/10/28 12:44:55 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/11/03 14:23:33 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,3 +21,7 @@ int	ft_strlen(const char *str)
 		i++;
 	return (i);
 }
+/*
+The strlen() function calculates the length of the string pointed to by
+s, excluding the terminating null byte ('\0').
+*/

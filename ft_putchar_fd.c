@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 13:25:07 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/11/03 11:57:08 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/11/03 14:17:49 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,3 +16,7 @@ void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }
+/*
+Outputs the character ’c’ to the specified file
+descriptor.
+*/

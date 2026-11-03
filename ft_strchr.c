@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 09:58:17 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/10/29 14:27:49 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/11/03 14:19:43 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,7 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)&s[i]);
 	return (NULL);
 }
+/*
+The  strchr() function returns a pointer to the first occurrence of the
+character c in the string s.
+*/

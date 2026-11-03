@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 14:03:19 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/10/28 14:49:33 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/11/03 14:18:34 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,7 @@ void	ft_putstr_fd(char *s, int fd)
 		i++;
 	}
 }
+/*
+Outputs the string ’s’ to the specified file
+descriptor.
+*/

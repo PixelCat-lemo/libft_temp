@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 12:22:58 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/10/28 13:23:57 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/11/03 14:20:52 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_strlcpy(&str[len1], s2, len2 + 1);
 	return (str);
 }
+/*
+Allocates memory (using malloc(3)) and returns a
+new string, which is the result of concatenating
+’s1’ and ’s2’.
+*/

@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 13:04:44 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/10/28 12:41:42 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/11/03 14:18:58 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,3 +79,13 @@ char	**ft_split(char const *s, char c)
 	}
 	return (str);
 }
+/*
+Allocates memory (using malloc(3)) and returns an
+array of strings obtained by splitting ’s’ using
+the character ’c’ as a delimiter.
+Each string in the returned array is allocated
+independently.
+The array of pointers itself is also allocated
+dynamically.
+The returned array must be NULL terminated.
+*/

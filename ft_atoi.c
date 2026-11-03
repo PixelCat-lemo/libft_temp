@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/22 16:53:49 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/10/28 12:35:44 by pde-lemo         ###   ########.fr       */
+/*   Created: 2026/11/02 10:25:49 by pde-lemo          #+#    #+#             */
+/*   Updated: 2026/11/03 11:47:26 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,3 +36,12 @@ int	ft_atoi(char *str)
 	}
 	return (result * sign);
 }
+
+/*
+The  atoi() function converts the initial portion of the string pointed
+       to by nptr to int.  The behavior is the same as
+
+           strtol(nptr, NULL, 10);
+
+       except that atoi() does not detect errors.
+*/

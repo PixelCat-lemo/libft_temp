@@ -20,14 +20,11 @@ Available Makefile rules:
 	make: Compile the library.
     make clean: Remove object files.
     make fclean: Remove object files and the library.
-    make re: Recompile everything.
+    make re: Remove and recompile everything.
 
-To use Libft, include libft.h and link libft.a when compiling your C program.
+To use Libft, with all files on the directory, include libft.h and link libft.a when compiling your
+C program by using writing make on the terminal while on the folder.
 Resources
-
-    C Reference
-    GNU Make Manual
-    42 Libft project subject.
 
 AI Usage
 

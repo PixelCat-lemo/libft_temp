@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 17:07:04 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/10/29 14:10:10 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/11/02 12:08:55 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
-	unsigned int	i;
-	unsigned int	j;
-	unsigned int	dest_len;
-	unsigned int	src_len;
+	size_t	i;
+	size_t	j;
+	size_t	dest_len;
+	size_t	src_len;
 
 	dest_len = ft_strlen(dest);
 	src_len = ft_strlen(src);

@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 10:54:53 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/10/29 13:48:28 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/11/02 16:43:24 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,14 @@
 char	*ft_strdup(const char *src)
 {
 	char	*dest;
-	int		i;
+	int		len;
 	int		j;
 
-	i = 0;
+	len = 0;
 	j = 0;
-	while (src[i])
-		i++;
-	dest = (char *)malloc(i + 1);
+	while (src[len])
+		len++;
+	dest = (char *)malloc(len + 1);
 	if (!dest)
 		return (NULL);
 	while (src[j])

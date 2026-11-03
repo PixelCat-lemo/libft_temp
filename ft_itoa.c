@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/28 10:12:27 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/10/28 12:38:35 by pde-lemo         ###   ########.fr       */
+/*   Created: 2026/11/02 10:31:04 by pde-lemo          #+#    #+#             */
+/*   Updated: 2026/11/03 11:51:03 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_len(long num)
+static int	ft_len(long num)
 {
 	int	len;
 
@@ -51,3 +51,8 @@ char	*ft_itoa(int n)
 		str[0] = '-';
 	return (str);
 }
+/*
+Allocates memory (using malloc(3)) and returns
+a string representing the integer received as an
+argument. Negative numbers must be handled.
+*/

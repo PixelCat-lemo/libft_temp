@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 17:10:08 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/10/30 11:50:17 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/11/03 11:53:42 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,6 @@ unsigned int	ft_lstsize(t_list *lst)
 	}
 	return (count);
 }
+/*
+Counts the number of nodes in the list.
+*/

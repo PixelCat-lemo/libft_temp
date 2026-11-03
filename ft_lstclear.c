@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/29 14:42:19 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/10/30 13:33:04 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/11/03 11:51:59 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,8 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 	}
 	*lst = NULL;
 }
+/*
+Deletes and frees the given node and all its
+successors, using the function ’del’ and free(3).
+Finally, set the pointer to the list to NULL
+*/

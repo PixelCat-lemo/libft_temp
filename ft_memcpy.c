@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 16:37:08 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/10/28 12:47:40 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/11/03 11:55:45 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,3 +28,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+/*
+The  memcpy()  function  copies  n bytes from memory area src to memory
+       area dest.  The memory areas must not overlap.  Use memmove(3)  if  the
+       memory areas do overlap.
+*/

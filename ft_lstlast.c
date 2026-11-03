@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 17:34:23 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/10/30 12:30:55 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/11/03 11:52:58 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,3 +20,8 @@ t_list	*ft_lstlast(t_list *lst)
 		lst = lst->next;
 	return (lst);
 }
+/*
+Deletes and frees the given node and all its
+successors, using the function ’del’ and free(3).
+Finally, set the pointer to the list to NULL.
+*/

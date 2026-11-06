@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 17:10:08 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/11/03 11:53:42 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/11/06 13:39:08 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,17 +15,14 @@
 unsigned int	ft_lstsize(t_list *lst)
 {
 	unsigned int	count;
-	t_list			*temp;
 
+	if (!lst)
+		return (0);
 	count = 0;
-	temp = lst;
-	while (temp)
+	while (lst)
 	{
 		count++;
-		temp = temp->next;
+		lst = lst->next;
 	}
 	return (count);
 }
-/*
-Counts the number of nodes in the list.
-*/

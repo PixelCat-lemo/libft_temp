@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 16:54:24 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/11/03 11:53:29 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/11/03 15:19:35 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,3 @@ t_list	*ft_lstnew(void *content)
 	node->next = NULL;
 	return (node);
 }
-/*
-Allocates memory (using malloc(3)) and returns
-a new node. The ’content’ member variable is
-initialized with the given parameter ’content’.
-The variable ’next’ is initialized to NULL.
-*/

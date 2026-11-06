@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 10:31:04 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/11/03 11:51:03 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/11/03 14:43:20 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,8 +51,3 @@ char	*ft_itoa(int n)
 		str[0] = '-';
 	return (str);
 }
-/*
-Allocates memory (using malloc(3)) and returns
-a string representing the integer received as an
-argument. Negative numbers must be handled.
-*/

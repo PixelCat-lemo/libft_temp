@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 09:42:37 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/11/03 11:52:41 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/11/06 13:01:24 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	if (!f)
+	if (!f || !lst)
 		return ;
 	while (lst)
 	{
@@ -22,7 +22,3 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		lst = lst->next;
 	}
 }
-/*
-Iterates through the list ’lst’ and applies the
-function ’f’ to the content of each node.
-*/

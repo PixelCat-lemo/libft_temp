@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 11:18:54 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/11/03 14:24:04 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/11/03 15:15:16 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	dest[i] = '\0';
 	return (dest);
 }
-/*
-Applies the function f to each character of the
-string s, passing its index as the first argument
-and the character itself as the second. A new
-string is created (using malloc(3)) to store the
-results from the successive applications of f.
-*/

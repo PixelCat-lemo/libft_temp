@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 15:57:09 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/11/03 11:56:51 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/11/03 14:44:20 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,3 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
-/*
-The  memset()  function  fills  the  first  n  bytes of the memory area
-       pointed to by s with the constant byte c.
-*/

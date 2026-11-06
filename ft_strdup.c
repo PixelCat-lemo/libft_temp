@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 10:54:53 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/11/03 14:20:06 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/11/06 13:41:45 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,9 @@ char	*ft_strdup(const char *src)
 
 	len = 0;
 	j = 0;
-	while (src[len])
-		len++;
+	if (!src)
+		return (NULL);
+	len = ft_strlen(src);
 	dest = (char *)malloc(len + 1);
 	if (!dest)
 		return (NULL);
@@ -33,8 +34,3 @@ char	*ft_strdup(const char *src)
 	dest[j] = '\0';
 	return (dest);
 }
-/*
-The  strdup() function returns a pointer to a new string which is a du‐
-plicate of the string s.  Memory for the new string  is  obtained  with
-malloc(3), and can be freed with free(3).
-*/

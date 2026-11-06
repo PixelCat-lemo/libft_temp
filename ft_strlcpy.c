@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 16:59:27 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/11/03 14:40:10 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/11/06 13:45:42 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,9 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 
 	i = 0;
 	src_len = 0;
-	while (src[src_len])
-		src_len++;
+	if (!src)
+		return (0);
+	src_len = ft_strlen(src);
 	if (size == 0)
 		return (src_len);
 	while (src[i] && i < size - 1)
@@ -31,8 +32,3 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	dest[i] = '\0';
 	return (src_len);
 }
-/*
-The strlcat() function appends the NUL-terminated string src to the end
-of dst.  It will append at most size - strlen(dst) - 1 bytes, NUL-termi‐
-nating the result.
-*/

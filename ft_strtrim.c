@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 12:37:24 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/11/03 14:36:35 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/11/03 15:06:45 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 		end--;
 	return (ft_substr(s1, start, end - start));
 }
-/*
-Allocates memory (using malloc(3)) and returns a
-copy of ’s1’ with characters from ’set’ removed
-from the beginning and the end.
-*/

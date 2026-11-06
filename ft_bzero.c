@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 16:25:02 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/11/03 11:47:54 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/11/03 14:42:23 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,3 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
-/*
-The  bzero()  function  erases  the  data  in the n bytes of the memory
-       starting at the location pointed to by s, by writing zeros (bytes  con‐
-       taining '\0') to that area.
-*/

@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 13:04:44 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/11/03 14:18:58 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/11/06 13:41:13 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ static int	ft_count_words(const char *s, char c)
 	int	words;
 	int	i;
 
+	if (!s)
+		return (0);
 	words = 0;
 	i = 0;
 	while (s[i])
@@ -56,8 +58,9 @@ static int	ft_fill_split(char **str, const char *s, char c)
 			while (s[i] && s[i] != c)
 				i++;
 			str[j] = ft_substr(s, start, i - start);
-			if (!str[j++])
+			if (!str[j])
 				return (0);
+			j++;
 		}
 	}
 	return (1);
@@ -79,13 +82,3 @@ char	**ft_split(char const *s, char c)
 	}
 	return (str);
 }
-/*
-Allocates memory (using malloc(3)) and returns an
-array of strings obtained by splitting ’s’ using
-the character ’c’ as a delimiter.
-Each string in the returned array is allocated
-independently.
-The array of pointers itself is also allocated
-dynamically.
-The returned array must be NULL terminated.
-*/

@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 10:06:15 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/11/03 14:37:04 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/11/06 13:43:09 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,19 +19,17 @@ char	*ft_strrchr(const char *s, int c)
 
 	most_recent = -1;
 	i = 0;
+	if (!s)
+		return (NULL);
 	while (s[i])
 	{
-		if (s[i] == (char)c)
+		if ((unsigned char)s[i] == (unsigned char)c)
 			most_recent = i;
 		i++;
 	}
-	if ((char)c == '\0')
+	if ((unsigned char)c == '\0')
 		return ((char *)&s[i]);
 	if (most_recent != -1)
 		return ((char *)&s[most_recent]);
 	return (NULL);
 }
-/*
-The strrchr() function returns a pointer to the last occurrence of  the
-character c in the string s.
-*/

@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 14:06:04 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/11/03 14:44:29 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/11/09 16:38:39 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,15 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
+	int	i;
+
+	i = 0;
 	if (!s || fd < 0)
 		return ;
-	while (*s)
+	while (s[i] != '\0')
 	{
-		write(fd, s, 1);
-		s++;
+		write(fd, &s[i], 1);
+		i++;
 	}
 	write(fd, "\n", 1);
 }

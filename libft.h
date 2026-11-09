@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 10:30:27 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/11/06 13:03:19 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/11/09 19:01:49 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <string.h>
-# include <stdint.h>
+# include <stddef.h>
+# include <limits.h>
 
 /*------<LISTS>------*/
 typedef struct s_list
@@ -46,7 +47,7 @@ int				ft_toupper(int c);
 int				ft_tolower(int c);
 
 /*---<STRINGS>---*/
-int				ft_strncmp(char *s1, char *s2, size_t n);
+int				ft_strncmp(const char *s1, const char *s2, size_t n);
 size_t			ft_strlen(const char *str);
 char			*ft_strchr(const char *s, int c);
 char			*ft_strrchr(const char *s, int c);
@@ -71,7 +72,7 @@ void			*ft_calloc(size_t nmemb, size_t size);
 void			ft_bzero(void *s, size_t n);
 
 /*---<NUMBERS>---*/
-int				ft_atoi(char *str);
+int				ft_atoi(const char *str);
 char			*ft_itoa(int n);
 
 /*---<FILE DESCRIPTORS>---*/

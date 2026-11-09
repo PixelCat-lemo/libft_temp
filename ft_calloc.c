@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 11:11:41 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/11/03 14:42:27 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/11/09 19:01:25 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*i;
 
-	if (size && nmemb > SIZE_MAX / size)
+	if (size && nmemb > INT_MAX / size)
 		return (NULL);
 	i = malloc(nmemb * size);
 	if (!i)

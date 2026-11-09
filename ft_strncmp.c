@@ -6,20 +6,18 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 16:58:03 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/11/06 13:47:14 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/11/09 17:10:09 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(char *s1, char *s2, size_t n)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	unsigned int	i;
+	size_t	i;
 
-	if (!s1 || !s2)
-		return (0);
 	i = 0;
-	while (i < n && s1[i] && s1[i] == s2[i])
+	while (i < n && s1[i] && s2[i] && s1[i] == s2[i])
 		i++;
 	if (i == n)
 		return (0);

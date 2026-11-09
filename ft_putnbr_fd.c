@@ -6,11 +6,12 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 14:08:42 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/11/06 14:04:04 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/11/09 17:05:21 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 void	ft_putnbr_fd(int s, int fd)
 {

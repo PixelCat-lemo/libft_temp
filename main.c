@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
+
 /* Lists tests */
 static void	print_string(void *content)
 {
@@ -35,14 +36,14 @@ int	main(void)
 	printf("isalpha: %d (expected %d)\n", ft_isalpha('A'), 1); // char is an alphabetic letter.
 	printf("isdigit: %d (expected %d)\n", ft_isdigit('5'), 1); // char is a decimal digit (0–9).
 	printf("isalnum: %d (expected %d)\n", ft_isalnum('Z'), 1); // char is alphanumeric.
-	printf("isascii: %d (expected %d)\n", ft_isascii(1237), 1); // char belongs to the ASCII char set (0–127).
+	printf("isascii: %d (expected %d)\n", ft_isascii(127), 1); // char belongs to the ASCII char set (0–127).
 	printf("isprint: %d (expected %d)\n", ft_isprint(' '), 1); // char is printable.
 	printf("toupper: %c (expected A)\n", ft_toupper('a')); // lowercase letter into uppercase.
 	printf("tolower: %c (expected a)\n", ft_tolower('A')); // uppercase letter into lowercase.
 
 	printf("\n========== STRING TESTS ==========\n");
 
-	printf("strlen: %zu (expected 5)\n", ft_strlen(NULL)); //Returns the length of a str, minus null terminator.
+	printf("strlen: %zu (expected 5)\n", ft_strlen("hello world!")); //Returns the length of a str, minus null terminator.
 
 	ft_strlcpy(buffer, NULL, sizeof(buffer)); // Copies a str into a destination buffer with size protection.
 	printf("strlcpy: %s (expected Hello)\n", buffer);
@@ -50,6 +51,7 @@ int	main(void)
 	ft_strlcat(buffer, NULL, sizeof(buffer)); // Appends a str to another while respecting the destination size.
 	printf("strlcat: %s (expected Hello World)\n", buffer);
 
+	// printf("strchr: %s (expected llo)\n", strchr(NULL, 'l'));
 	printf("strchr: %s (expected llo)\n", ft_strchr(NULL, 'l')); // Finds the first occurrence of a character in a str.
 	printf("strrchr: %s (expected o)\n", ft_strrchr(NULL, 'o')); // Finds the last occurrence of a character in a str.
 
@@ -61,23 +63,23 @@ int	main(void)
 
 	printf("atoi: %d (expected -42)\n", ft_atoi("-42")); // Converts a str with nbrs into an int value.
 
-	str = ft_strdup("Hello World"); // Creates a dynamically allocated duplicate of a str.
+	str = ft_strdup(NULL); // Creates a dynamically allocated duplicate of a str.
 	printf("strdup: %s (expected Hello World)\n", str);
 	free(str);
 
-	str = ft_substr("Hello World", 6, 5); // Creates a new str containing a substring from a specified index and length.
+	str = ft_substr(NULL, 6, 5); // Creates a new str containing a substring from a specified index and length.
 	printf("substr: %s (expected World)\n", str);
 	free(str);
 
-	str = ft_strjoin("Hello ", "World"); // Creates a new str by concatenating two strs.
+	str = ft_strjoin("Hello ", NULL); // Creates a new str by concatenating two strs.
 	printf("strjoin: %s (expected Hello World)\n", str);
 	free(str);
 
-	str = ft_strtrim("  Hello World  ", " "); // Removes specified chars from the beginning and end of a str.
+	str = ft_strtrim(NULL, " "); // Removes specified chars from the beginning and end of a str.
 	printf("strtrim: %s (expected Hello World)\n", str);
 	free(str);
 
-	split = ft_split("Hello World 42", ' '); // Splits a str into an array of strs using a delimiter char.
+	split = ft_split("  B R  Two  ", ' '); // Splits a str into an array of strs using a delimiter char.
 	printf("split:\n");
 	i = 0;
 	while (split[i])
@@ -91,7 +93,7 @@ int	main(void)
 	printf("itoa: %s (expected -12345)\n", str = ft_itoa(-12345)); // Converts an int into a dynamically allocated str.
 	free(str);
 
-	str = ft_strmapi("hello", uppercase); // Creates a new str by applying a function to each char and its index.
+	str = ft_strmapi("hello", NULL); // Creates a new str by applying a function to each char and its index.
 	printf("strmapi: %s (expected HELLO)\n", str);
 	free(str);
 
@@ -137,13 +139,13 @@ int	main(void)
 
 	printf("\n========== OUTPUT TESTS ==========\n");
 
-	ft_putchar_fd('A', 1); // Writes a character to a specified file descriptor.
+	ft_putchar_fd('A', -1); // Writes a character to a specified file descriptor.
 	printf(" (expected A)\n");
 
-	ft_putstr_fd("Hello", 1); // Writes a string to a specified file descriptor.
+	ft_putstr_fd(NULL, 1); // Writes a string to a specified file descriptor.
 	printf(" (expected Hello)\n");
 
-	ft_putendl_fd("Hello", 1); // Writes a string followed by a newline to a specified file descriptor.
+	ft_putendl_fd("Hello", -21); // Writes a string followed by a newline to a specified file descriptor.
 
 	ft_putnbr_fd(-42, 1); // Writes an integer to a specified file descriptor.
 	printf(" (expected -42)\n");

@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 13:04:44 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/11/06 13:41:13 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/11/09 13:20:07 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,8 @@ static int	ft_fill_split(char **str, const char *s, char c)
 
 	i = 0;
 	j = 0;
+	if (!str || !s)
+		return (0);
 	while (s[i])
 	{
 		while (s[i] == c)

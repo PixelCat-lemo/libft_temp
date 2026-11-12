@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 17:07:04 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/11/09 18:39:39 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/11/12 10:36:50 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,9 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	size_t	dest_len;
 	size_t	src_len;
 
-	if (!src)
-		return (0);
 	src_len = ft_strlen(src);
 	dest_len = 0;
-	while (dest_len < size && dest[dest_len])
+	while (dest && dest_len < size && dest[dest_len])
 		dest_len++;
 	if (dest_len == size)
 		return (size + src_len);

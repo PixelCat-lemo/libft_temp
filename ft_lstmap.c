@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 10:14:05 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/11/12 15:57:04 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/11/16 17:38:17 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		new_obj = ft_lstnew(content);
 		if (!new_obj)
 		{
+			if (del)
+				del(content);
 			ft_lstclear(&new_list, del);
 			return (NULL);
 		}

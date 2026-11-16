@@ -180,12 +180,6 @@ To use Libft in another C project, include the header file:
 c
 <pre><code>#include "libft.h"</code></pre>
 
-Run the executable:
-
-bash
-<pre><code>./libft</code></pre>
-
-
 <h2 id="Resources">Resources</h2>
 
 The following resources were useful for understanding the functions and concepts implemented in this project:

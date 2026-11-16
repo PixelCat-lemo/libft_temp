@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 11:09:20 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/11/09 13:26:19 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/11/13 10:51:35 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,11 @@ void	*ft_memmove(void *dest, const void *src, size_t len)
 	unsigned char		*dst;
 	const unsigned char	*orig;
 
-	if (src == dest || len == 0)
-		return (dest);
 	dst = (unsigned char *)dest;
 	orig = (const unsigned char *)src;
 	if (orig < dst && orig + len > dst)
 		while (len--)
-			*(dst + len) = *(orig + len);
+			dst[len] = orig[len];
 	else
 	{
 		while (len--)

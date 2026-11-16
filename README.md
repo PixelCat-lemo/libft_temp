@@ -1,4 +1,4 @@
-This project has been created as part of the 42 curriculum by pde-lemo.
+*This project has been created as part of the 42 curriculum by pde-lemo.*
 <br>
 
 <h1>Libft</h1>

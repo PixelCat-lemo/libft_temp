@@ -6,7 +6,7 @@
 /*   By: pde-lemo <pde-lemo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 10:30:27 by pde-lemo          #+#    #+#             */
-/*   Updated: 2026/11/12 13:00:38 by pde-lemo         ###   ########.fr       */
+/*   Updated: 2026/11/13 10:12:48 by pde-lemo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,6 @@
 
 # include <stdlib.h>
 # include <unistd.h>
-# include <string.h>
-# include <stddef.h>
-# include <limits.h>
 # include <stdint.h>
 
 /*------<LISTS>------*/
